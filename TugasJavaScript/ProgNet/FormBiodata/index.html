@@ -123,11 +123,61 @@
             <label for="tglLahir">Tanggal Lahir:</label>
             <input type="date" id="tglLahir" required><br><br>
 
-            <label for="agama" class="font-weight-bold">Agama:</label>
+            <label for="hobi">Hobi:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="hobi[]" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Jurnalistik
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="hobi[]" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Menyanyi
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="hobi[]" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Menari
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="hobi[]" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                  Olahraga
+                </label>
+            </div>
+
+            <label for="agama">Agama</label>
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="agama" id="hindu">
                 <label class="form-check-label" for="hindu">
                   Hindu
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="agama" id="kristen">
+                <label class="form-check-label" for="kristen">
+                  Kristen
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="agama" id="katolik">
+                <label class="form-check-label" for="katolik">
+                  Katolik
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="agama" id="buddha">
+                <label class="form-check-label" for="buddha">
+                  Buddha
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="agama" id="konghucu">
+                <label class="form-check-label" for="konghucu">
+                  Kong Hu Cu
                 </label>
             </div>
             <div class="form-check">
@@ -136,31 +186,6 @@
                   Islam
                 </label>
             </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="agama" id="kristen" checked>
-                <label class="form-check-label" for="kristen">
-                  Kristen
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="agama" id="katolik" checked>
-                <label class="form-check-label" for="katolik">
-                  Katolik
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="agama" id="buddha" checked>
-                <label class="form-check-label" for="buddha">
-                  Buddha
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" name="agama" id="konghucu" checked>
-                <label class="form-check-label" for="konghucu">
-                  Kong Hu Cu
-                </label>
-            </div>
-
             <input type="submit" value="Submit">
         </form>
     </div>

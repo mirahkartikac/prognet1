@@ -15,10 +15,14 @@ function validateForm() {
     const age = document.getElementById("age").value;
     const birthplace = document.getElementById("birthplace").value;
     const tglLahir = document.getElementById("tglLahir").value;
-    const agama = document.querySelectorAll('input[name="agama"]:checked').value;
+    var hobi = []
+    var checkboxes = document.querySelectorAll('input[name="hobi[]"]:checked')
+    for(var checkbox of checkboxes){
+        hobi.push(checkbox.nextElementSibling.textContent);
+    }
+    var agama = document.querySelector('input[name="agama"]:checked').nextElementSibling.textContent;
 
-
-    if (email === "" || name === "" || nim === "" || gender === "" || age === "" || birthplace === "" || tglLahir === "" || univ === "" || fakultas ===  "" || prodi === "" || agama === "") {
+    if (email === "" || name === "" || nim === "" || gender === "" || age === "" || birthplace === "" || tglLahir === "" || univ === "" || fakultas ===  "" || prodi === "" || hobi.length === 0 || agama === "") {
         displayMessage("Semua kolom harus diisi.");
     } else {
         displayMessage(`Email: ${email}<br>
@@ -31,6 +35,7 @@ function validateForm() {
         Umur: ${age} tahun<br>
         Tempat Lahir: ${birthplace}<br>
         Tanggal Lahir: ${tglLahir}<br>
+        Hobi: ${hobi.join(", ")}<br>
         Agama: ${agama}<br>`
         );
     }
